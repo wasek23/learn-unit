@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta charset='UTF-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Learn Unit</title>
+
+	<!-- Tailwind CDN -->
+	<script src='js/tailwind.min.js'></script>
+
+	<!-- Flow Bite -->
+	<link rel='stylesheet' href='https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css' />
+	<script src='https://unpkg.com/flowbite@1.5.3/dist/flowbite.js'></script>
+
+	<!-- Tailwind Config -->
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					colors: {
+						primary: '#289bde',
+						primary2: '#f4fafd',
+						light1: '#f4f4f4',
+						light2: '#e8e8e8',
+						light3: '#d2d2d2',
+						dark1: '#1d1d1d',
+						dark2: '#4a4a4a',
+						dark3: '#777',
+						dark4: '#a4a4a4'
+					},
+					spacing: {
+						'650': '650px'
+					}
+				}
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<!-- Header Start -->
+	<!-- Navbar Start -->
+	<nav class='bg-white px-2 sm:px-4 py-2.5 fixed w-full z-50 top-0 left-0 shadow-md'>
+		<div class='container flex flex-wrap justify-between items-center mx-auto'>
+			<a href='/'>
+				<h1 class='text-4xl text-dark2 font-semibold'>Learn Unit</h2>
+			</a>
+
+			<div class='flex md:order-2'>
+				<a href='/' class='text-xl font-semibold text-primary hover:text-white bg-white hover:bg-primary py-4 px-8 border border-primary rounded mr-2 md:mr-0 transition duration-300'>Register</a>
+
+				<button data-collapse-toggle='navbar-sticky' type='button' class='inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200' aria-controls='navbar-sticky' aria-expanded='false'>
+					<span class='sr-only'>Open main menu</span>
+
+					<svg class='w-12 h-12' aria-hidden='true' fill='currentColor' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'>
+						<path fill-rule='evenodd' d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z' clip-rule='evenodd'></path>
+					</svg>
+				</button>
+			</div>
+
+			<div class='hidden justify-between items-center w-full md:flex md:w-auto md:order-1' id='navbar-sticky'>
+				<ul class='flex flex-col md:flex-row p-4 mt-4 md:mt-0 md:space-x-6 text-lg font-medium rounded-lg md:rounded-none bg-primary2 md:bg-transparent'>
+					<li>
+						<a href='#' class='block text-lg text-white md:text-primary bg-primary md:bg-transparent py-2 px-4 my-1 md:my-0 rounded-md md:rounded-none' aria-current='page'>Home</a>
+					</li>
+					<li>
+						<a href='#' class='block text-lg text-dark3 hover:text-white md:hover:text-primary hover:bg-primary md:hover:bg-transparent py-2 px-4 my-1 md:my-0 rounded-md md:rounded-none' aria-current='page'>Courses</a>
+					</li>
+					<li>
+						<a href='#' class='block text-lg text-dark3 hover:text-white md:hover:text-primary hover:bg-primary md:hover:bg-transparent py-2 px-4 my-1 md:my-0 rounded-md md:rounded-none' aria-current='page'>Deals</a>
+					</li>
+					<li>
+						<a href='#' class='block text-lg text-dark3 hover:text-white md:hover:text-primary hover:bg-primary md:hover:bg-transparent py-2 px-4 my-1 md:my-0 rounded-md md:rounded-none' aria-current='page'>Success</a>
+					</li>
+					<li>
+						<a href='#' class='block text-lg text-dark3 hover:text-white md:hover:text-primary hover:bg-primary md:hover:bg-transparent py-2 px-4 my-1 md:my-0 rounded-md md:rounded-none' aria-current='page'>About</a>
+					</li>
+					<li>
+						<a href='#' class='block text-lg text-dark3 hover:text-white md:hover:text-primary hover:bg-primary md:hover:bg-transparent py-2 px-4 my-1 md:my-0 rounded-md md:rounded-none' aria-current='page'>Register</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- Navbar End -->
+
+
+	<!-- Carousel Start -->
+	<div class="container mx-auto relative mt-32" data-carousel="static">
+		<!-- Carousel wrapper -->
+		<div class="relative overflow-hidden rounded-lg h-64 sm:h-96 md:h-650">
+			<div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10" data-carousel-item="">
+				<div class="absolute z-20 w-full h-full flex flex-col items-center justify-center text-center bg-dark1/50">
+					<h2 class='text-3xl md:text-6xl font-semibold text-white mb-5 w-full md:w-2/3 mx-auto'>Get Started Digital Learning</h2>
+					<p class='text-md md:text-lg text-white mb-7 w-full md:w-2/3 mx-auto'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+					<button class='text-lg md:text-xl font-semibold text-white bg-primary py-3 px-8 rounded'>Get Started</button>
+				</div>
+
+				<img src="img/cover/cover-1.png" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slider 1">
+			</div>
+
+			<div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
+				<div class="absolute z-20 w-full h-full flex flex-col items-center justify-center text-center bg-dark1/50">
+					<h2 class='text-3xl md:text-6xl font-semibold text-white mb-5 w-full md:w-2/3 mx-auto'>Get Started Digital Learning</h2>
+					<p class='text-md md:text-lg text-white mb-7 w-full md:w-2/3 mx-auto'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+					<button class='text-lg md:text-xl font-semibold text-white bg-primary py-3 px-8 rounded'>Get Started</button>
+				</div>
+
+				<img src="img/cover/cover-2.jpg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slider 2">
+			</div>
+
+			<div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item="">
+				<div class="absolute z-20 w-full h-full flex flex-col items-center justify-center text-center bg-dark1/50">
+					<h2 class='text-3xl md:text-6xl font-semibold text-white mb-5 w-full md:w-2/3 mx-auto'>Get Started Digital Learning</h2>
+					<p class='text-md md:text-lg text-white mb-7 w-full md:w-2/3 mx-auto'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+					<button class='text-lg md:text-xl font-semibold text-white bg-primary py-3 px-8 rounded'>Get Started</button>
+				</div>
+
+				<img src="img/cover/cover-3.jpg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Slider 3">
+			</div>
+		</div>
+
+		<!-- Slider controls -->
+		<button type="button" class="flex absolute top-0 left-0 z-30 items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev="">
+			<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+				<svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+				</svg>
+				<span class="sr-only">Previous</span>
+			</span>
+		</button>
+
+		<button type="button" class="flex absolute top-0 right-0 z-30 items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next="">
+			<span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+				<svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+				</svg>
+				<span class="sr-only">Next</span>
+			</span>
+		</button>
+	</div>
+	<!-- Carousel End -->
+	<!-- Header End -->
+</body>
+
+</html>
